@@ -15,6 +15,10 @@ class SearchResultPageLocators:
     SUBMIT = (By.ID, 'tinSubBtn')
     
     STATUS = (By.XPATH, '//*[@id="msg"]')
+
+    TAX_PAYER_NAME = (By.XPATH, '//*[@id="tin_result"]/div/div[2]')
+
+    
     
     
     

@@ -39,7 +39,10 @@ for tin in TINs:
     time.sleep(5)
     status = driver.find_element( *SearchResultPageLocators.STATUS).text
     print(status)
-    logger.info(f"\nTIN: {tin}, Captcha: {captcha}\n Status: {status}\n\n")
+
+    tax_payer_name = driver.find_element(*SearchResultPageLocators.TAX_PAYER_NAME).text
+    print(tax_payer_name)
+    logger.info(f"\n{tax_payer_name}\nTIN: {tin}, Captcha: {captcha}\nStatus: {status}\n\n")
     time.sleep(5)
     
 driver.close()
