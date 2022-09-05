@@ -1,9 +1,9 @@
 from selenium.webdriver.common.by import By
-
+from utils.config.env import URL
 
 
 class SearchResultPageLocators:
-    
+    URL = URL
     TIN = (By.ID, 'tin')
     
     CAPTCHA_TEXT = (By.ID, 'captcha') # Read 

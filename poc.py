@@ -17,7 +17,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 import time
 # from selenium.webdriver.chrome.options import Options
-from locators import SearchResultPageLocators
+from bot.locators import SearchResultPageLocators
 logger = log_manager.app_logger()
 
 def local():
